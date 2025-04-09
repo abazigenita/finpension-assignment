@@ -3,8 +3,8 @@ export type ButtonSize = 'sm' | 'md' | 'lg';
 export type IconPosition = 'left' | 'right';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: ButtonVariant;
-  size?: ButtonSize;
-  icon?: React.ReactNode;
-  iconPosition?: IconPosition
+  variant?: ButtonVariant | undefined;
+  size?: ButtonSize | undefined;
+  icon?: React.ReactNode | undefined;
+  iconPosition?: IconPosition | undefined;
 }
