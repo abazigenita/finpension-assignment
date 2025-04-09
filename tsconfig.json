@@ -11,5 +11,5 @@
     "allowImportingTsExtensions": true,
     "types": ["jest", "@testing-library/jest-dom", "node"]
   },
-  "include": ["src", "jest.setup.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["lib", "demo", "jest.setup.ts", "**/*.ts", "**/*.tsx"]
 }
