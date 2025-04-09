@@ -1,5 +1,6 @@
 import { ButtonProps } from "./Button.types.ts";
 import { buttonBase, buttonSizes, buttonVariants } from "./Button.styles.ts";
+import { border, focus, font } from "../../styles/tokens.ts";
 
 const Button: React.FC<ButtonProps> = ({
                                          children,
@@ -15,7 +16,16 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type="button"
       disabled={disabled}
-      className={`${buttonBase} ${buttonVariants[variant]} ${buttonSizes[size]} ${disabled && 'opacity-50 cursor-not-allowed'} ${className || ''}`}
+      className={`
+        ${buttonBase}
+        ${buttonVariants[variant]}
+        ${buttonSizes[size]}
+        ${border}
+        ${focus}
+        ${font}
+        ${disabled && 'opacity-50 cursor-not-allowed'}
+        ${className || ''}
+      `}
       {...rest}
     >
       {icon && iconPosition === 'left' && <span className="mr-2">{icon}</span>}
