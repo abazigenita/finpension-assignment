@@ -1,5 +1,5 @@
 import { ButtonProps } from "./Button.types.ts";
-import { buttonBase, buttonSizes, buttonVariants } from "./Button.styles.ts";
+import { buttonBase, buttonDisabled, buttonSizes, buttonVariants } from "./Button.styles.ts";
 import { border, focus, font } from "../../styles/tokens.ts";
 
 const Button: React.FC<ButtonProps> = ({
@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
         ${border}
         ${focus}
         ${font}
-        ${disabled && 'opacity-50 cursor-not-allowed'}
+        ${disabled && buttonDisabled}
         ${className || ''}
       `}
       {...rest}
