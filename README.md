@@ -22,7 +22,7 @@ npm run dev
 
 ### 3. View it in the browser
 
-Navigate to https://localhost:3000 to view the app
+Navigate to https://localhost:3000/finpension-assignment/ to view the app
 
 ## Running Tests
 
